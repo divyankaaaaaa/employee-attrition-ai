@@ -6,3 +6,5 @@ venv/
 *.pickle
 data/raw/
 .ipynb_checkpoints/
+
+models/*.joblib
