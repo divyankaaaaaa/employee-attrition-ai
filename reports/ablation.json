@@ -1,0 +1,53 @@
+{
+  "A. All features": {
+    "logistic_regression": {
+      "cv_auc_mean": 0.9155,
+      "cv_auc_std": 0.0317,
+      "test_auc": 0.9716
+    },
+    "random_forest": {
+      "cv_auc_mean": 0.9369,
+      "cv_auc_std": 0.0202,
+      "test_auc": 0.9769
+    },
+    "gradient_boosting": {
+      "cv_auc_mean": 0.9301,
+      "cv_auc_std": 0.0193,
+      "test_auc": 0.9743
+    }
+  },
+  "B. Without Job Role Match": {
+    "logistic_regression": {
+      "cv_auc_mean": 0.6703,
+      "cv_auc_std": 0.0312,
+      "test_auc": 0.6787
+    },
+    "random_forest": {
+      "cv_auc_mean": 0.6935,
+      "cv_auc_std": 0.0245,
+      "test_auc": 0.7152
+    },
+    "gradient_boosting": {
+      "cv_auc_mean": 0.6904,
+      "cv_auc_std": 0.0358,
+      "test_auc": 0.6712
+    }
+  },
+  "C. Without Job Role Match + Gender + Marital Status": {
+    "logistic_regression": {
+      "cv_auc_mean": 0.6309,
+      "cv_auc_std": 0.0437,
+      "test_auc": 0.7133
+    },
+    "random_forest": {
+      "cv_auc_mean": 0.6575,
+      "cv_auc_std": 0.0414,
+      "test_auc": 0.759
+    },
+    "gradient_boosting": {
+      "cv_auc_mean": 0.6315,
+      "cv_auc_std": 0.0375,
+      "test_auc": 0.701
+    }
+  }
+}
