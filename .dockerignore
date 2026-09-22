@@ -1,0 +1,13 @@
+venv/
+.venv/
+.git/
+.gitignore
+__pycache__/
+*.pyc
+mysite/
+notebooks/
+reports/
+models/
+*.md
+.env
+.ipynb_checkpoints/
