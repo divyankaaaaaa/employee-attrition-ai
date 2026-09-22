@@ -6,3 +6,6 @@ matplotlib>=3.8
 jupyter>=1.0
 
 shap>=0.44
+
+fastapi>=0.110
+uvicorn>=0.29
