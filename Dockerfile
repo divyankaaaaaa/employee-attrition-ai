@@ -21,4 +21,7 @@ RUN python src/train.py
 
 EXPOSE 8000
 
-CMD ["uvicorn", "api.main:app", "--host", "0.0.0.0", "--port", "8000"]
+# Shell form (not the ["uvicorn", ...] array form) so $PORT actually gets substituted.
+# Render, Railway, Fly.io etc. inject PORT at runtime and expect the app to bind to it;
+# ${PORT:-8000} falls back to 8000 for plain `docker run` where PORT isn't set.
+CMD uvicorn api.main:app --host 0.0.0.0 --port ${PORT:-8000}
